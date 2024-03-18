@@ -1,0 +1,235 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(193, 224, 16);
+      }
+      .container {
+        background-color: palevioletred;
+        position: relative;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+      }
+      #div1 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      #img1 {
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #div3 {
+        display: flex;
+        background-color: palevioletred;
+        margin-top: 20px;
+      }
+
+      #img2 {
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
+      .box {
+        background-color: rgba(16, 199, 231, 0.868);
+        width: 100%;
+        height: 300px;
+        border: 1px black solid;
+        position: relative;
+        
+      }
+
+      #circle {
+        background-color: orange;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        animation: bounce 2s linear infinite, moveForward 4s linear infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          background-color: rgb(227, 49, 14);
+          bottom: 0;
+          transform: rotate(45deg);
+        }
+        50% {
+          background-color: orange;
+          bottom: 200px; 
+          transform: rotate(-45deg);
+        }
+      }
+
+      @keyframes moveForward {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: calc(100% - 50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="div1">
+        <h1>Welcome to My webpage</h1>
+        <p>
+          This my new web page created easily to access and edit all the
+          elements taht you want.Feel free to do so. This my new web page
+          created easily to access and edit all the elements taht you want.Feel
+          free to do so. This my new web page created easily to access and edit
+          all the elements taht you want.Feel free to do so. This my new web
+          page created easily to access and edit all the elements taht you
+          want.Feel free to do so. This my new web page created easily to access
+          and edit all the elements taht you want.Feel free to do so.
+        </p>
+        <img src="samsung.jpeg" alt="error" id="img1" />
+
+        <div id="div3">
+          <p>
+            This my new web page created easily to access and edit all the
+            elements taht you want.Feel free to do so. This my new web page
+            created easily to access and edit all the elements taht you
+            want.Feel free to do so. This my new web page created easily to
+            access and edit all the elements taht you want.Feel free to do so.
+            This my new web page created easily to access and edit all the
+            elements taht you want.Feel free to do so. This my new web page
+            created easily to access and edit all the elements taht you
+            want.Feel free to do so.
+          </p>
+          <img src="samsung.jpeg" alt="error" id="img2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div id="circle"></div>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: yellow;
+      }
+
+      #img1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+      }
+      #img2 {
+        display: block;
+        margin-bottom: 50px;
+        margin-right: 50px;
+        border-radius: 50px;
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+      }
+      .flexbox {
+        display: flex;
+      }
+      .container {
+        background-color: pink;
+      }
+      #circont {
+        background-color: azure;
+        height: 200px;
+        border: solid black;
+      }
+      #circle {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        border-radius: 100px;
+        animation-name: bounce;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+      }
+      @keyframes bounce {
+        0% {
+          bottom: 0;
+        }
+        100% {
+          bottom: 450px;
+        }
+      }
+      @keyframes moveFoward {
+        0% {
+          left: 0;
+          background-color: orange;
+        }
+        50% {
+          left: 50%;
+          bottom: 0;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>WELLCOME TO MY WEBPAGE</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque minima
+        sapiente doloribus iste nihil nesciunt voluptatibus optio, laboriosam
+        veritatis cumque ex odio magni et autem nemo ullam reprehenderit ipsum.
+        Libero.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        minima sapiente doloribus iste nihil nesciunt voluptatibus optio,
+        laboriosam veritatis cumque ex odio magni et autem nemo ullam
+        reprehenderit ipsum. Libero.Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Itaque minima sapiente doloribus iste nihil nesciunt
+        voluptatibus optio, laboriosam veritatis cumque ex odio magni et autem
+        nemo ullam reprehenderit ipsum. Libero.
+      </p>
+      <img src="samsung.jpeg" alt="" id="img1" />
+      <div class="flexbox">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+          minima sapiente doloribus iste nihil nesciunt voluptatibus optio,
+          laboriosam veritatis cumque ex odio magni et autem nemo ullam
+          reprehenderit ipsum. Libero.Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Itaque minima sapiente doloribus iste nihil nesciunt
+          voluptatibus optio, laboriosam veritatis cumque ex odio magni et autem
+          nemo ullam reprehenderit ipsum. Libero.Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Itaque minima sapiente doloribus iste
+          nihil nesciunt voluptatibus optio, laboriosam veritatis cumque ex odio
+          magni et autem nemo ullam reprehenderit ipsum. Libero.
+        </p>
+        <img src="samsung.jpeg" alt="" id="img2" />
+      </div>
+    </div>
+    <div id="circont">
+      <div id="circle"></div>
+    </div>
+  </body>
+</html>
